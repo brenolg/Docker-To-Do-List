@@ -1,1 +1,1 @@
-docker rmv 01container -f
+docker rm -f 01container
