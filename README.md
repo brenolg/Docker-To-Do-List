@@ -28,10 +28,9 @@ Para instalar e executar o projeto localmente, você precisa ter o Docker instal
 
 ```bash
 git clone git@github.com:brenolg/Docker-To-Do-List.git
-
 ```
-
-Construa as imagens dos serviços com os comandos no docker
+- Os comandos estão localizados na pasta docker-commands
+- Construa as imagens e contêineres dos serviços com os comandos no docker
 
 ## Requisitos do projeto
 
