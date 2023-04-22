@@ -2,7 +2,7 @@
 
 Este é um projeto que utiliza Docker para criar uma aplicação web de lista de tarefas (todo list).
 
-O objetivo deste projeto é praticar os conceitos de Docker, como imagens, containers, volumes e redes. A aplicação web é composta por serviços: um front-end em React, um back-end em Node.js e um um aplicativo de teste que valida se as aplicações estão se comunicando. Cada serviço roda em um container separado e se comunica por meio de uma rede interna criada pelo Docker. Os dados da aplicação são persistidos em um volume.
+O objetivo deste projeto é praticar os conceitos de Docker, como imagens, containers, volumes e redes. A aplicação web é composta por serviços: um front-end em React, um back-end em Node.js e um um aplicativo de teste que valida se as aplicações estão se comunicando. Cada serviço roda em um container separado e se comunicam por meio de uma rede interna criada pelo Docker. Os dados da aplicação são persistidos em um volume.
 
 ## Funcionalidades
 
