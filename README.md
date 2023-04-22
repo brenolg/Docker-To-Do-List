@@ -2,7 +2,7 @@
 
 Este é um projeto que utiliza Docker para criar uma aplicação web de lista de tarefas (todo list).
 
-O objetivo deste projeto é praticar os conceitos de Docker, como imagens, containers, volumes e redes. A aplicação web é composta por três serviços: um front-end em React, um back-end em Node.js e um banco de dados MongoDB. Cada serviço roda em um container separado e se comunica por meio de uma rede interna criada pelo Docker. Os dados da aplicação são persistidos em um volume que é montado no container do MongoDB.
+O objetivo deste projeto é praticar os conceitos de Docker, como imagens, containers, volumes e redes. A aplicação web é composta por serviços: um front-end em React, um back-end em Node.js e um um aplicativo de teste que valida se as aplicações estão se comunicando. Cada serviço roda em um container separado e se comunica por meio de uma rede interna criada pelo Docker. Os dados da aplicação são persistidos em um volume.
 
 ## Funcionalidades
 
@@ -20,7 +20,6 @@ As principais tecnologias utilizadas neste projeto são:
 - Docker
 - Docker-compose
 
-
 ## Instalação do projeto localmente
 
 Para instalar e executar o projeto localmente, você precisa ter o Docker instalado na sua máquina. Depois, siga os seguintes passos:
@@ -34,8 +33,6 @@ git clone git@github.com:brenolg/Docker-To-Do-List.git
 
 Construa as imagens dos serviços com os comandos no docker
 
-
-
 ## Requisitos do projeto
 
 1. Crie um container em modo interativo, sem rodá-lo, nomeando-o como 01container e utilizando a imagem alpine na versão 3.12
@@ -47,7 +44,9 @@ Construa as imagens dos serviços com os comandos no docker
 7. Rode um novo container com a imagem nginx com a versão 1.21.3-alpine em segundo plano nomeando-o como 02images e mapeando sua porta padrão de acesso para porta 3000 do sistema hospedeiro
 8. Pare o container 02images que está em andamento
 9. Gere uma build a partir do Dockerfile do back-end do todo-app nomeando a imagem para todobackend
-
+10. Gere uma build a partir do Dockerfile do front-end do todo-app nomeando a imagem para todofrontend
+11. Gere uma build a partir do Dockerfile dos testes do todo-app nomeando a imagem para todotests
+12. Suba uma orquestração em segundo plano com o docker-compose de forma que backend, frontend e tests consigam se comunicar
 
 ## Agradecimentos
 Este projeto foi desenvolvido como parte do curso de Desenvolvimento de Software da Trybe. Agradeço à Trybe pela oportunidade de aprender e praticar Docker e outras tecnologias.
